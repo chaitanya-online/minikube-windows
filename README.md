@@ -28,14 +28,19 @@ Ensure that the Docker engine is running on your machine.
 Start Minikube:
 Open CMD and run the following command to start Minikube using the Docker driver:
 
-minikube start --driver=docker
+$ minikube start --driver=docker
+-----------------------------------
 Check Status:
 After Minikube has started successfully, check its status using:
-
- 
- 
-minikube status
+$ minikube status
+-----------------------------------
 Usage
 With Minikube running, you can now interact with your local Kubernetes cluster using kubectl commands. You can deploy, manage, and test your Kubernetes applications directly on your Windows machine.
-
+-----------------------------------
+to get cluster details
+$ kubectl cluster-info
+-----------------------------------
+to get nodes infomation
+$ kubectl get nodes
+-----------------------------------
 Enjoy exploring and learning Kubernetes with Minikube!
