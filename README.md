@@ -84,12 +84,22 @@ kubectl logs <pod name>
 check ip by using 
 
 kubectl get svc
+$ minikube service game-service-2048 --url
 
 ![alt text](image-3.png)
 
 Now access the application in browser by using
 
 http://127.0.0.1:53349/
+
+![alt text](image-5.png)
+
+--------------
+
+
+To See the Full Dashboard
+
+![alt text](image-4.png)
 
 Create manifest file for check manifest.yaml in root directory 
 Enjoy exploring and learning Kubernetes with Minikube!
