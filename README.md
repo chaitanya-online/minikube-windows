@@ -101,5 +101,8 @@ To See the Full Dashboard
 
 ![alt text](image-4.png)
 
+http://127.0.0.1:53877/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+
+![alt text](image-6.png)
 Create manifest file for check manifest.yaml in root directory 
 Enjoy exploring and learning Kubernetes with Minikube!
