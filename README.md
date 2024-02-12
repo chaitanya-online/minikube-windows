@@ -43,4 +43,13 @@ $ kubectl cluster-info
 to get nodes infomation
 $ kubectl get nodes
 -----------------------------------
+
+
+All Set now we are using local docker to communicate with minikube so we have to use below commmand
+
+$ minikube docker-env
+
+
+![alt text](image-1.png)
+--------------------------------
 Enjoy exploring and learning Kubernetes with Minikube!
