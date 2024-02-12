@@ -52,4 +52,44 @@ $ minikube docker-env
 
 ![alt text](image-1.png)
 --------------------------------
+
+
+Now Create a docker image in my case am using 2048-game image 
+
+Replo link :- https://github.com/chaitanya-online/2048-game
+
+After cloning repo goto directory of repo in local machine and type below command
+
+docker build -t richeb/2048-game .
+
+
+----------------------------------
+
+Now After sucessfull building the docker file have to apply manifest file
+
+kubectl apply -f manifest.yaml
+
+---------------------------------
+
+check status by using 
+
+kubectl get pods
+
+kubectl logs <pod name>
+
+![alt text](image-2.png)
+
+----------------------------------
+
+check ip by using 
+
+kubectl get svc
+
+![alt text](image-3.png)
+
+Now access the application in browser by using
+
+http://127.0.0.1:53349/
+
+Create manifest file for check manifest.yaml in root directory 
 Enjoy exploring and learning Kubernetes with Minikube!

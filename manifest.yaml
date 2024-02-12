@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 2048-game
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 2048-game
+  template:
+    metadata:
+      labels:
+        app: 2048-game
+    spec:
+      containers:
+      - name: 2048-game
+        image: your_image_name_here # Replace with your built and pushed container image name
+        ports:
+        - containerPort: 3000
+          name: http
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 200m
+            memory: 512Mi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: game-service-2048 # Updated service name to meet DNS-1035 label requirements
+spec:
+  type: NodePort
+  selector:
+    app: 2048-game
+  ports:
+  - port: 80
+    targetPort: 3000
+    name: http
