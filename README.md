@@ -5,6 +5,12 @@
 Minikube is a tool that enables you to run Kubernetes clusters locally on your Windows machine. It is particularly useful for development, testing, and learning Kubernetes concepts without needing access to a cloud or remote Kubernetes cluster.
 
 Installation Steps
+Download Kubectl
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+![img.png](img.png)
+
 Download Minikube:
 Download the Minikube installer for Windows from the latest release or use   to download and install:
 
@@ -15,7 +21,12 @@ Invoke-WebRequest -OutFile 'c:\minikube\minikube.exe' -Uri 'https://github.com/k
 ```
 
 2) Set Environment Variables:
-Set the Minikube folder path in the environment variables:
+Set the Minikube and Kubectl  folder path in the environment variables:
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
 
  
  
