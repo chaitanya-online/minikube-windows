@@ -1,3 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+minikube-windows.iml
+misc.xml
+modules.xml
+workspace.xml
+vcs.xml
