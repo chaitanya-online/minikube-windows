@@ -92,7 +92,7 @@ docker build -t richeb/2048-game .
 ----------------------------------
 
 Now After successfully building the docker file have to apply manifest file
-Check manifest.yaml in root directory
+Check manifest.yaml in root directory of this Repo
 
 
 ```
