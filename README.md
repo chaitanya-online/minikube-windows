@@ -151,4 +151,4 @@ http://127.0.0.1:53877/api/v1/namespaces/kubernetes-dashboard/services/http:kube
 
 
 
-Enjoy exploring and learning Kubernetes with Minikube!
+Enjoy exploring and learning Kubernetes with Minikube!!
