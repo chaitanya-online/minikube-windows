@@ -30,7 +30,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: game-service-2048 # Updated service name to meet DNS-1035 label requirements
+  name: game-service-2048
 spec:
   type: NodePort
   selector:
