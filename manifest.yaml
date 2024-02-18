@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: 2048-game
-        image: your_image_name_here # Replace with your built and pushed container image name
+        image: richeb/2048-game # Replace with your built and pushed container image name
         ports:
         - containerPort: 3000
           name: http

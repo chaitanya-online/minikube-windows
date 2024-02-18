@@ -46,6 +46,8 @@ Open CMD and run the following command to start Minikube using the Docker driver
 ```
 minikube start --driver=docker
 ```
+![img_3.png](img_3.png)
+
 Check Status:
 After Minikube has started successfully, check its status using below comand : 
 ```
@@ -54,17 +56,23 @@ minikube status
 Usage
 With Minikube running, you can now interact with your local Kubernetes cluster using kubectl commands. You can deploy, manage, and test your Kubernetes applications directly on your Windows machine.
 
+![img_4.png](img_4.png)
+
 To get cluster details use below command :"
 
 ```
 kubectl cluster-info
 ```
 
+![img_5.png](img_5.png)
+
 To get nodes infomation
 
 ```
 kubectl get nodes
 ```
+
+![img_6.png](img_6.png)
 
 
 All Set now we are using local docker to communicate with minikube so we have to use below command
@@ -89,6 +97,8 @@ After cloning repo goto directory of repo in local machine and type below comman
 docker build -t richeb/2048-game .
 ```
 
+![img_7.png](img_7.png)
+
 ----------------------------------
 
 Now After successfully building the docker file have to apply manifest file
@@ -98,6 +108,8 @@ Check manifest.yaml in root directory of this Repo
 ```
 kubectl apply -f manifest.yaml
 ```
+
+![img_8.png](img_8.png)
 
 
 
